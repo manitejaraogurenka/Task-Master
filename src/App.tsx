@@ -55,9 +55,7 @@ const App: React.FC = () => {
   return (
     <DragDropContext onDragEnd={onDragEnd}>
       <div className="App">
-        <span className="heading">
-          <img src="../public/TaskFavicon.png" /> Task Master
-        </span>
+        <span className="heading">Task Master</span>
         <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
         <TodoList
           todos={todos}
